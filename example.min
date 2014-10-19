@@ -1,0 +1,16 @@
+MINION 3
+**VARIABLES**
+DISCRETE x[5] {1..5}
+
+**CONSTRAINTS**
+sumgeq([x[0],x[1]],x[3])
+sumgeq([x[1],x[2]],x[4])
+sumgeq([x[0],x[3]],x[4])
+sumgeq([x[0],x[1],x[2],x[3],x[4]],15)
+
+sumleq([x[0],x[1]],x[3])
+sumleq([x[1],x[2]],x[4])
+sumleq([x[0],x[3]],x[4])
+sumleq([x[0],x[1],x[2],x[3],x[4]],15)
+
+**EOF**
